@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
@@ -14,5 +15,24 @@ public class SceneManagement : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnPlayButtonClick()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
+
+    public void OnSettingsButtonClick()
+    {
+        SceneManager.LoadScene("SettingsScene");
+    }
+
+    public void OnQuitButtonClick()
+    {
+#if !UNITY_EDITOR
+        Application.Quit();
+#else
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }
