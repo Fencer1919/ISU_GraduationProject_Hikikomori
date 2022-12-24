@@ -6,14 +6,15 @@ public class Movement : MonoBehaviour
 {
 	[SerializeField] private byte	speed;
 	[SerializeField] private byte	jumpForce;
-
+   // [SerializeField] float rotationSpeed;
 	float   horizontalInput;
 	float   verticalInput;
-	bool    isJumpInput = false;
+    bool    isJumpInput = false;
 	bool    isGrounded = true;
 
+    private Animator animator;
 	Vector3 moveDirection;
-
+    
 	Rigidbody rb;
 
     // Fixed Update independent from FPS
@@ -33,6 +34,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
 		rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
 	// Update is called once per frame
@@ -48,19 +50,38 @@ public class Movement : MonoBehaviour
         {
 			isJumpInput = false;
         }
+        if(Input.GetAxis("Horizontal") != 0 && Input.GetAxis("Vertical") != 0
+           || Input.GetAxis("Horizontal") != 0 && Input.GetAxis("Vertical") == 0
+           ||Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") != 0) {
+            animator.SetBool("isWalking",true);
+        }
+        else
+        {
+            animator.SetBool("isWalking",false);
+
+        }
     }
 
-    private void MyInput()
+    public void MyInput()
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
+        
+        
     }
 
+    
     private void MovePlayer()
     {
-        moveDirection = (transform.forward * verticalInput + transform.right * horizontalInput).normalized;
-        var velo = (moveDirection * speed);
-        rb.velocity = new Vector3(velo.x, rb.velocity.y, velo.z);
+        Vector3 moveDirection = new Vector3(horizontalInput, 0, verticalInput);
+        moveDirection.Normalize();
+        
+        transform.Translate(moveDirection * speed * Time.deltaTime, Space.World);
+        
+        if (moveDirection != Vector3.zero)
+        {
+            transform.forward = moveDirection;
+        }
     }
 
     private void Grounded()
