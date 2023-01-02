@@ -89,7 +89,7 @@ public class Movement : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, -transform.up, out hit, 1f))
         {
-            if(hit.distance <= 0.1f)
+            if(hit.distance <= 0.5f)
             {
                 isGrounded = true;
             }
