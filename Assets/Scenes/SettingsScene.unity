@@ -1259,8 +1259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897837eb3f0b97d4eb658d7499b26f97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullscreenTog: {fileID: 0}
-  vsyncTog: {fileID: 0}
+  fullscreenTog: {fileID: 1481817805}
+  vsyncTog: {fileID: 1600263386}
 --- !u!4 &890596181
 Transform:
   m_ObjectHideFlags: 0
