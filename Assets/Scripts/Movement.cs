@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour
 
         if (isJumpInput && isGrounded)
 		{
-			rb.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
+			rb.AddForce(new Vector3(0, 1, 0), ForceMode.Impulse);
 		}
 
     }

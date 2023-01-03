@@ -17,6 +17,7 @@ public class SceneManagement : MonoBehaviour
         
     }
 
+    //Main Menu
     public void OnPlayButtonClick()
     {
         SceneManager.LoadScene("GameScene");
@@ -34,5 +35,11 @@ public class SceneManagement : MonoBehaviour
 #else
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
+    }
+
+    //Settings
+    public void OnBackButtonClick()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
