@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DoorOnTrigger : MonoBehaviour
+public class DoorToGameScene : MonoBehaviour
 {
-    
-
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Daichi'sRoom");
+            SceneManager.LoadScene("GameScene");
         }
     }
 }
