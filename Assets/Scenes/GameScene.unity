@@ -3564,9 +3564,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 551228408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43774697cf934ce4f9f9a655d746ea30, type: 3}
+  m_Script: {fileID: 11500000, guid: c4adc7410dfa8eb45bc7ec70b025b6a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToInteract: {fileID: 551228408}
+  nextSceneName: Daichi'sRoom
 --- !u!65 &551228410
 BoxCollider:
   m_ObjectHideFlags: 0

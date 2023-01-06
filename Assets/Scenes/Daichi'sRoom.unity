@@ -843,9 +843,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865703704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bce2071f7f15ed240bfa071a01cdd9fa, type: 3}
+  m_Script: {fileID: 11500000, guid: c4adc7410dfa8eb45bc7ec70b025b6a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToInteract: {fileID: 1865703704}
+  nextSceneName: GameScene
 --- !u!1001 &1960824653
 PrefabInstance:
   m_ObjectHideFlags: 0
