@@ -8,11 +8,9 @@ using UnityEngine.UIElements;
 public class PlayerBossMovement : MonoBehaviour
 {
     [SerializeField]
-    public List<GameObject> mainPosition;
-    public List<GameObject> leftPosition;
-    public List<GameObject> rightPosition;
-    
-    private int currentStep = 0;
+    public GameObject mainPosition;
+    public GameObject leftPosition;
+    public GameObject rightPosition;
 
     public bool leftPos = false;
     public bool rightPos = false;
@@ -34,11 +32,11 @@ public class PlayerBossMovement : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.CompareTag("Crashed"))
+        if (collision.transform.CompareTag("Letter"))
         {
             //SoundManager.Instance.PlaySound(SoundManager.SoundTypes.Crash);
-            collision.transform.GetComponent<MeshRenderer>().enabled = false;
-            collision.transform.GetComponent<BoxCollider>().enabled = false;
+            //collision.transform.GetComponent<MeshRenderer>().enabled = false;
+            //collision.transform.GetComponent<BoxCollider>().enabled = false;
             
         }
     }
@@ -70,11 +68,11 @@ public class PlayerBossMovement : MonoBehaviour
 
         if(rightPos == false)
         {
-            transform.DOMove(rightPosition[0].gameObject.transform.position, 1f);
+            transform.DOMove(rightPosition.gameObject.transform.position, 1f);
         }
         if(rightPos == true)
         {
-            transform.DOMove(mainPosition[0].gameObject.transform.position, 1f);
+            transform.DOMove(mainPosition.gameObject.transform.position, 1f);
             rightPos = false;
         }
         
@@ -98,11 +96,11 @@ public class PlayerBossMovement : MonoBehaviour
         
         if(leftPos == false)
         {
-            transform.DOMove(leftPosition[0].gameObject.transform.position, 1f);
+            transform.DOMove(leftPosition.gameObject.transform.position, 1f);
         }
         if(leftPos == true)
         {
-            transform.DOMove(mainPosition[0].gameObject.transform.position, 1f);
+            transform.DOMove(mainPosition.gameObject.transform.position, 1f);
             leftPos = false;
         }
        

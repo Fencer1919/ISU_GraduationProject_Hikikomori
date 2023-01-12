@@ -666,12 +666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e11d5bccc5938c543ac5e4c6d912520d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainPosition:
-  - {fileID: 1528770248}
-  leftPosition:
-  - {fileID: 1860230900}
-  rightPosition:
-  - {fileID: 1475154011}
+  mainPosition: {fileID: 1528770248}
+  leftPosition: {fileID: 1860230900}
+  rightPosition: {fileID: 1475154011}
   leftPos: 0
   rightPos: 0
   player: {fileID: 471086671}
@@ -1502,6 +1499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1928808505}
+  - component: {fileID: 1928808506}
   m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
@@ -1517,7 +1515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928808504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -7.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 388257498}
@@ -1526,6 +1524,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928808506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928808504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b33efdd1db03ea40bd4a539bf104a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letters:
+  - {fileID: 4859988121240797095, guid: bce540a823ae5dc438516d3b2b3da487, type: 3}
+  - {fileID: 2129468245485624406, guid: 21f40cbed532fe24aa74250813874988, type: 3}
+  - {fileID: 6192736639405658981, guid: dc2f5a23503edc349bca44920b08476c, type: 3}
+  - {fileID: 7387598776536974741, guid: b88f212c4d3108b4980afa32fa24661d, type: 3}
+  - {fileID: 6205386764881992982, guid: a26209985d247f8438bfbe5ff18de72b, type: 3}
+  - {fileID: 4259076680888531828, guid: a74358877d2a3c641a2bc99618e24656, type: 3}
+  - {fileID: 4217209154056822609, guid: bca6d172c1c08bc45a21c041af3cc0f7, type: 3}
+  - {fileID: 365315039410200442, guid: 8d4086f24cc477c4eb60c922863a871b, type: 3}
+  spawnPositions:
+  - {fileID: 388257497}
+  - {fileID: 191115996}
+  - {fileID: 1497851444}
+  speed: 4
 --- !u!1 &2014060610
 GameObject:
   m_ObjectHideFlags: 0
