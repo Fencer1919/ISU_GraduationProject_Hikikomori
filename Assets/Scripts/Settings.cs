@@ -42,12 +42,4 @@ public class Settings : MonoBehaviour
             QualitySettings.vSyncCount = 0;
         }
     }
-    
-    //Set  Resolution Will Be Added
-    /*
-    public void SetResolution() 
-    {
-        Screen.SetResolution(1920, 1080, fullscreenTog);
-    }
-    */
 }

@@ -20,7 +20,7 @@ public class SceneManagement : MonoBehaviour
     //Main Menu
     public void OnPlayButtonClick()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("Daichi'sRoom");
     }
 
     public void OnSettingsButtonClick()
