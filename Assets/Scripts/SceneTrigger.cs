@@ -4,14 +4,15 @@ using System.Net;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BossTrigger : MonoBehaviour
+public class SceneTrigger : MonoBehaviour
 {
+    public string nextScene;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("BossFight1");
-        }   
+            SceneManager.LoadScene(nextScene);
+        }
     }
 }

@@ -3564,11 +3564,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 551228408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4adc7410dfa8eb45bc7ec70b025b6a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 305cdb3788c96674e9f29e3e79946218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToInteract: {fileID: 551228408}
-  nextSceneName: Daichi'sRoom
+  nextScene: Daichi'sRoom
 --- !u!65 &551228410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6118,6 +6117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 305cdb3788c96674e9f29e3e79946218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: BossFight1
 --- !u!4 &1088267258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f22bac86cdd14c4ebebc5b9ad44aba5, type: 3}

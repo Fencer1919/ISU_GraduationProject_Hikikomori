@@ -1382,11 +1382,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865703704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4adc7410dfa8eb45bc7ec70b025b6a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 305cdb3788c96674e9f29e3e79946218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToInteract: {fileID: 1865703704}
-  nextSceneName: GameScene
+  nextScene: GameScene
 --- !u!1 &1948813056
 GameObject:
   m_ObjectHideFlags: 0
