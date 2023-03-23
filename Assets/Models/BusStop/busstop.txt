@@ -1,0 +1,2 @@
+4 parçadan oluşuyor hepsine aynı koaardinatı girdiğinde otomatik olarak kare şeklinde birleşiyor gerekrise
+kopyala yapıştırla büyütülebilir.

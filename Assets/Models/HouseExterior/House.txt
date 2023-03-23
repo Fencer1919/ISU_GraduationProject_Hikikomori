@@ -1,0 +1,3 @@
+Evi sağ çaprazdan izometrik bakılacak şekilde tasarladım o yüzden arka kısım modellenmedi. Evden çıktığında göreceği
+kısım burası dışardaki yoldan da supermarkete veya durağa bağlayabiliriz. veya harita koyup ordan seçmesini sağlarız
+size kalmış
