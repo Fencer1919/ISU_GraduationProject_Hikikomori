@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossFight1.unity
     guid: 128091e14108f18499d59f67c97872f3
+  - enabled: 1
+    path: Assets/Scenes/GameScene2.unity
+    guid: afb5a56dbd716ce4e86e40e21adfce36
+  - enabled: 1
+    path: Assets/Scenes/Street.unity
+    guid: bf89399249829ca4ea753c452361adc2
+  - enabled: 1
+    path: Assets/Scenes/Supermarket.unity
+    guid: 7b9752047a4eac24983a4ad5f38d60a4
   m_configObjects: {}
