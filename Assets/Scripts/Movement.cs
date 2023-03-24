@@ -16,6 +16,10 @@ public class Movement : MonoBehaviour
 	Vector3 moveDirection;
     
 	Rigidbody rb;
+
+    public SceneBlink sceneBlink;
+    public GameObject imagePanel;
+   
     
 
     // Fixed Update independent from FPS
@@ -100,6 +104,14 @@ public class Movement : MonoBehaviour
             }
         }
     }
- 
-
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Mother"))
+        {
+            imagePanel.SetActive(true);
+            sceneBlink.isCollided = true;
+        }
+    }
+    
 }

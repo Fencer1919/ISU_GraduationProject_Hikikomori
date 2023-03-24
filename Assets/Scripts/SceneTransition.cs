@@ -1,3 +1,5 @@
+using System;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
@@ -6,21 +8,17 @@ using DG.Tweening;
 
 public class SceneTransition : MonoBehaviour
 {
-    public Image imageToFade;
-
-    public float fadeDuration = 0.2f;
     public string nextSceneName;
+    public float waitingTime = 5f;
 
-    private void OnTriggerEnter(Collider other)
+    public void OnComplete()
     {
-        if (other.CompareTag("Player"))
-        {
-            imageToFade.DOFade(1, fadeDuration).onComplete += onComplete;
-        }
+        StartCoroutine(WaitForScene());
     }
 
-    private void onComplete()
+    IEnumerator WaitForScene()
     {
+        yield return new WaitForSeconds(waitingTime);
         SceneManager.LoadScene(nextSceneName);
     }
 }
