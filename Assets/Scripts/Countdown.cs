@@ -7,7 +7,7 @@ public class Countdown : MonoBehaviour
 {
     [SerializeField] private Image time;
     [SerializeField] private Text timeText;
-    private float currentTime;
+    public float currentTime;
     [SerializeField] private float duration;
     void Start()
     {
@@ -25,4 +25,5 @@ public class Countdown : MonoBehaviour
         }
         yield return null;
     }
+    
 }

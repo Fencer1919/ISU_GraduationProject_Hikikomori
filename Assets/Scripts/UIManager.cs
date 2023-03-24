@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,8 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 { 
    public GameObject letterPanel;
-   
+
+
    public void CloseLetter()
    {
       letterPanel.SetActive(false);
@@ -15,4 +17,7 @@ public class UIManager : MonoBehaviour
    {
       letterPanel.SetActive(true);
    }
+   
+
+   
 }

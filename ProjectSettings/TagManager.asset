@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Crashed
   - Letter
+  - Text
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-	[SerializeField] private byte	speed;
+    [SerializeField] private byte	speed;
 	[SerializeField] private byte	jumpForce;
    // [SerializeField] float rotationSpeed;
 	float   horizontalInput;
@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
 	Vector3 moveDirection;
     
 	Rigidbody rb;
+    
 
     // Fixed Update independent from FPS
     private void FixedUpdate()
@@ -99,5 +100,6 @@ public class Movement : MonoBehaviour
             }
         }
     }
+ 
 
 }

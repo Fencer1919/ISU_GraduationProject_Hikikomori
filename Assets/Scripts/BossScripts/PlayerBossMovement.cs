@@ -18,6 +18,8 @@ public class PlayerBossMovement : MonoBehaviour
     public GameObject player;
     public Animator playerAnimator;
     public Rigidbody playerRb;
+    
+    public SceneManagement sceneManagement;
     // Start is called before the first frame update
     void Start()
     {
@@ -106,5 +108,15 @@ public class PlayerBossMovement : MonoBehaviour
        
         //SoundManager.Instance.PlaySound(SoundManager.SoundTypes.Jump);
 
+    }
+    
+       
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.transform.CompareTag("Letter"))
+        {
+            sceneManagement.GameRestart();
+            Debug.Log("Collided");
+        }
     }
 }
