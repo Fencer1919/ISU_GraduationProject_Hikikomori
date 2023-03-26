@@ -24,9 +24,18 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene2.unity
     guid: afb5a56dbd716ce4e86e40e21adfce36
   - enabled: 1
+    path: Assets/Scenes/House_outside.unity
+    guid: 8d162b2f7e02f774798124a9dba44b3c
+  - enabled: 1
     path: Assets/Scenes/Street.unity
     guid: bf89399249829ca4ea753c452361adc2
   - enabled: 1
+    path: Assets/Scenes/Supermarket_outside.unity
+    guid: 5169c8846aff7614d9e99c6ba871be34
+  - enabled: 1
     path: Assets/Scenes/Supermarket.unity
     guid: 7b9752047a4eac24983a4ad5f38d60a4
+  - enabled: 1
+    path: Assets/Scenes/Bus_stop.unity
+    guid: 2f21d7c483dd07c4d9723645445b1a3a
   m_configObjects: {}
