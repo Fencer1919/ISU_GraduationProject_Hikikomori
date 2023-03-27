@@ -2482,10 +2482,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d2024114bbba243af56f342fbe4512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 334998315}
-  fadeDuration: 1
-  targetAlpha: 0
   nextSceneName: 
+  waitingTime: 5
 --- !u!114 &334998315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6309,10 +6307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d2024114bbba243af56f342fbe4512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageToFade: {fileID: 334998315}
-  fadeDuration: 5
-  targetAlpha: 255
   nextSceneName: BossFight1
+  waitingTime: 5
 --- !u!4 &1088267258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f22bac86cdd14c4ebebc5b9ad44aba5, type: 3}
@@ -10062,6 +10058,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 3
+  sceneBlink: {fileID: 0}
+  imagePanel: {fileID: 334998312}
 --- !u!65 &1737647999
 BoxCollider:
   m_ObjectHideFlags: 0
