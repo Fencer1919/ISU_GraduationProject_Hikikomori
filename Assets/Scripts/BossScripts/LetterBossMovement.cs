@@ -10,22 +10,26 @@ public class LetterBossMovement : MonoBehaviour
     public List<GameObject> letters;
     public List<GameObject> spawnPositions;
     
-    public float speed = 4f;
+    public float waitingSpeed = 4f;
 
+    public PlayerBossMovement playerBossMovement;
     
     void Start()
     {
         StartCoroutine(WaitForSpawn());
     }
     
+
     IEnumerator WaitForSpawn()
-    {
-        while (true)
-        { 
-            SpawnLetters();
-            yield return new WaitForSeconds(speed);
+    { 
+        if (playerBossMovement.isGameStarted)
+        {
+            while (true)
+            {
+                SpawnLetters();
+                yield return new WaitForSeconds(waitingSpeed);
+            }
         }
-        
     }
 
     public void SpawnLetters()
@@ -39,10 +43,12 @@ public class LetterBossMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.CompareTag("Letter"))
+        if (collision.transform.CompareTag("Playerz"))
         {
             Debug.Log("Crashed");
             //TODO UI Manager
         }
     }
+    
+    
 }

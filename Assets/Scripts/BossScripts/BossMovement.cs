@@ -6,7 +6,8 @@ using DG.Tweening;
 public class BossMovement : MonoBehaviour
 {
     public GameObject bossMouth;
-    void FixedUpdate()
+    
+    void Start()
     {
         Yoyoying();
     }

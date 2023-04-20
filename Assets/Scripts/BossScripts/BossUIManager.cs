@@ -7,8 +7,9 @@ public class BossUIManager : MonoBehaviour
     public GameObject bossCompletedPanel;
     public GameObject timerPanel;
     public Countdown countdown;
-    
-      
+
+    public PlayerBossMovement playerBossMovement;
+
 
     public void FixedUpdate()
     {
@@ -19,6 +20,7 @@ public class BossUIManager : MonoBehaviour
     }
     public void OnBossSuccess()
     {
+        playerBossMovement.StopMovement();
         bossCompletedPanel.SetActive(true);
         timerPanel.SetActive(false);
     }

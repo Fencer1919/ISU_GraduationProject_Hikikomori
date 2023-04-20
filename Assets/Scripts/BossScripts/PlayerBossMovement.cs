@@ -20,17 +20,24 @@ public class PlayerBossMovement : MonoBehaviour
     public Rigidbody playerRb;
     
     public SceneManagement sceneManagement;
+
+    public bool isGameStarted = false;
     // Start is called before the first frame update
     void Start()
     {
         playerRb = player.GetComponentInChildren<Rigidbody>();
         playerAnimator = player.GetComponentInChildren<Animator>();
+        isGameStarted = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        ButtonChecking();
+        if (isGameStarted)
+        {
+            ButtonChecking();
+        }
+        
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -118,5 +125,10 @@ public class PlayerBossMovement : MonoBehaviour
             sceneManagement.GameRestart();
             Debug.Log("Collided");
         }
+    }
+
+    public void StopMovement()
+    {
+        isGameStarted = false;
     }
 }
