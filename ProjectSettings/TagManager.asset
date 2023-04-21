@@ -8,14 +8,17 @@ TagManager:
   - Letter
   - Text
   - Mother
+  - Laser
+  - Enemy
+  - NPC
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - NPC
   - 
   - 
   - 
