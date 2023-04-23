@@ -658,6 +658,8 @@ GameObject:
   - component: {fileID: 411987248}
   - component: {fileID: 411987249}
   - component: {fileID: 411987250}
+  - component: {fileID: 411987256}
+  - component: {fileID: 411987255}
   - component: {fileID: 411987253}
   m_Layer: 0
   m_Name: Flowchart
@@ -690,8 +692,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 411987249}
+  selectedCommands:
+  - {fileID: 411987250}
   variables: []
   description: 
   stepPause: 0
@@ -718,7 +722,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 101.09276
-    y: 89.15465
+    y: 88.12372
     width: 110.20618
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -726,8 +730,9 @@ MonoBehaviour:
   itemId: 0
   blockName: New Block
   description: 
-  eventHandler: {fileID: 411987253}
+  eventHandler: {fileID: 411987256}
   commandList:
+  - {fileID: 411987255}
   - {fileID: 411987252}
   - {fileID: 411987251}
   - {fileID: 411987248}
@@ -767,7 +772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 275.35052
+    x: 274.3196
     y: 89.30924
     width: 115.97938
     height: 40
@@ -778,6 +783,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 411987253}
   - {fileID: 411987250}
   suppressAllAutoSelections: 0
 --- !u!114 &411987250
@@ -863,20 +869,21 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &411987253
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411987245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 000864f8e9e1748a39807861d0e60e29, type: 3}
+  m_Script: {fileID: 11500000, guid: 82e4c082f762243f6943909a4272096d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 411987247}
-  suppressBlockAutoSelect: 0
-  keyPressType: 0
-  keyCode: 101
+  itemId: 7
+  indentLevel: 0
+  images:
+  - {fileID: 1543554134}
+  sprite: {fileID: 21300000, guid: af23c2d3040eeae45a03662d967e69e2, type: 3}
 --- !u!4 &411987254
 Transform:
   m_ObjectHideFlags: 0
@@ -891,6 +898,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &411987255
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411987245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e4c082f762243f6943909a4272096d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  images:
+  - {fileID: 1543554134}
+  sprite: {fileID: 21300000, guid: 4877b4d6869e595448f0431d44346e70, type: 3}
+--- !u!114 &411987256
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411987245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98f5f89242e80d42865cdf1912beda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 411987247}
+  suppressBlockAutoSelect: 0
+  tagFilter:
+  - NPC1
+  FireOn: 1
+  colliderVar: {fileID: 0}
 --- !u!4 &511567265 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5306827069379936065, guid: 33ce2af3e7ca575438138ee98b25d0a1, type: 3}
@@ -1713,6 +1755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letterPanel: {fileID: 2003419727}
+  letterScrollRect: {fileID: 0}
 --- !u!4 &1380844953
 Transform:
   m_ObjectHideFlags: 0
@@ -2190,7 +2233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4877b4d6869e595448f0431d44346e70, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3159,7 +3202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &2108490802
 AudioSource:
   m_ObjectHideFlags: 0
