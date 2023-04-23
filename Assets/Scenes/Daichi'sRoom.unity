@@ -244,13 +244,15 @@ GameObject:
   - component: {fileID: 372055698}
   - component: {fileID: 372055697}
   - component: {fileID: 372055696}
+  - component: {fileID: 372055700}
+  - component: {fileID: 372055701}
   m_Layer: 5
   m_Name: Letter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &372055696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,13 +330,56 @@ RectTransform:
   - {fileID: 2104780019}
   - {fileID: 1948813057}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &372055700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372055695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 2104780019}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &372055701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372055695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!1 &407289993
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letterPanel: {fileID: 372055695}
+  letterScrollRect: {fileID: 372055700}
 --- !u!4 &451024649
 Transform:
   m_ObjectHideFlags: 0
@@ -465,7 +511,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481391182
 GameObject:
@@ -958,7 +1004,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1536,15 +1582,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5755993343550976878, guid: d222ab52e74259e4e9787fc25ba0c578, type: 3}
       propertyPath: m_LocalScale.x
-      value: 326.64584
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5755993343550976878, guid: d222ab52e74259e4e9787fc25ba0c578, type: 3}
       propertyPath: m_LocalScale.y
-      value: 326.64584
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5755993343550976878, guid: d222ab52e74259e4e9787fc25ba0c578, type: 3}
       propertyPath: m_LocalScale.z
-      value: 326.64584
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 5755993343550976878, guid: d222ab52e74259e4e9787fc25ba0c578, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1647,7 +1693,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 9
+    m_FontSize: 12
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -1656,42 +1702,57 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Dear Daichi,
+  m_Text: '
 
 
 
-    I hope this letter finds you well. I''m writing to
-    you from the ski slopes, where I''m spending a few days with some friends. It''s
-    been a lot of fun and I''m having a great time, but I have to admit that I''ve
-    been thinking a lot about you.
 
-    I know that you''ve been struggling with
-    hikikomori lately, and it breaks my heart to see you feeling so isolated and
-    alone. I want you to know that I care about you and that I want to see you happy
-    and thriving.
 
-    I also want to encourage you to think about stepping outside
-    of your comfort zone and trying new things. I know that it can be scary to socialize
-    and interact with others, especially if you''ve been feeling down or anxious.
-    But I believe in you, and I think that you have the strength and courage to overcome
-    these challenges.
 
-    I''m not saying that it''s going to be easy, but I do
-    think that it''s worth it. Life is short, and I don''t want you to waste it by
-    staying cooped up inside all the time. There are so many wonderful things out
-    there to see and do, and I think you would really enjoy them if you gave them
-    a chance.
 
-    So please, Daichi, consider giving it a try. Take small steps
-    if you need to, but try to get out and interact with others. You don''t have
-    to do it alone either - if it helps, you can bring a friend or family member
+
+
+
+
+
+    Dear Daichi,
+
+
+    I hope this letter finds you well.
+    I''m writing to you from the ski slopes, where I''m spending a few days with
+    some friends. It''s been a lot of fun and I''m having a great time, but I have
+    to admit that I''ve been thinking a lot about you.
+
+
+    I know that you''ve
+    been struggling with hikikomori lately, and it breaks my heart to see you feeling
+    so isolated and alone. I want you to know that I care about you and that I want
+    to see you happy and thriving.
+
+    I also want to encourage you to think about
+    stepping outside of your comfort zone and trying new things. I know that it can
+    be scary to socialize and interact with others, especially if you''ve been feeling
+    down or anxious. But I believe in you, and I think that you have the strength
+    and courage to overcome these challenges.
+
+
+    I''m not saying that it''s going
+    to be easy, but I do think that it''s worth it. Life is short, and I don''t want
+    you to waste it by staying cooped up inside all the time. There are so many wonderful
+    things out there to see and do, and I think you would really enjoy them if you
+    gave them a chance.
+
+
+    So please, Daichi, consider giving it a try. Take small
+    steps if you need to, but try to get out and interact with others. You don''t
+    have to do it alone either - if it helps, you can bring a friend or family member
     with you for support.
+
 
     I''m here for you, always, and I''m always just a
     phone call or message away if you need someone to talk to.
-
 
 
     Take care,
