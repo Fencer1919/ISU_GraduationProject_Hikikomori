@@ -1157,6 +1157,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 705872229}
   - {fileID: 1332809194}
+  delayTime: 3
 --- !u!195 &1587659842
 NavMeshAgent:
   m_ObjectHideFlags: 0

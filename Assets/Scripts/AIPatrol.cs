@@ -9,11 +9,12 @@ public class AIPatrol : MonoBehaviour
     public Transform[] waypoints;
     int waypointIndex;
     Vector3 target;
+    public float delayTime = 2f; // The amount of time to delay in seconds
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        UpdateDestination();
+        StartCoroutine(DelayCoroutine());
     }
 
     void Update()
@@ -40,4 +41,9 @@ public class AIPatrol : MonoBehaviour
         }
     }
 
+    IEnumerator DelayCoroutine()
+    {
+        yield return new WaitForSeconds(delayTime);
+        UpdateDestination();
+    }
 }

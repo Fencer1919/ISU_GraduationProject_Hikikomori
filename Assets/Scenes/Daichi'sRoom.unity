@@ -252,7 +252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &372055696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1693,7 +1693,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 12
+    m_FontSize: 9
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -1702,40 +1702,29 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: '
-
-
-
-
-
-
-
-
-
-
-
 
     Dear Daichi,
 
 
-    I hope this letter finds you well.
-    I''m writing to you from the ski slopes, where I''m spending a few days with
-    some friends. It''s been a lot of fun and I''m having a great time, but I have
-    to admit that I''ve been thinking a lot about you.
+    I hope this letter finds you well. I''m writing
+    to you from the ski slopes, where I''m spending a few days with some friends.
+    It''s been a lot of fun and I''m having a great time, but I have to admit that
+    I''ve been thinking a lot about you.
 
 
-    I know that you''ve
-    been struggling with hikikomori lately, and it breaks my heart to see you feeling
-    so isolated and alone. I want you to know that I care about you and that I want
-    to see you happy and thriving.
+    I know that you''ve been struggling
+    with hikikomori lately, and it breaks my heart to see you feeling so isolated
+    and alone. I want you to know that I care about you and that I want to see you
+    happy and thriving.
 
-    I also want to encourage you to think about
-    stepping outside of your comfort zone and trying new things. I know that it can
-    be scary to socialize and interact with others, especially if you''ve been feeling
-    down or anxious. But I believe in you, and I think that you have the strength
-    and courage to overcome these challenges.
+    I also want to encourage you to think about stepping
+    outside of your comfort zone and trying new things. I know that it can be scary
+    to socialize and interact with others, especially if you''ve been feeling down
+    or anxious. But I believe in you, and I think that you have the strength and
+    courage to overcome these challenges.
 
 
     I''m not saying that it''s going
