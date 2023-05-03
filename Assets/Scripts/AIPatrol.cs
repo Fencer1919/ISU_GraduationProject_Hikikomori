@@ -14,12 +14,13 @@ public class AIPatrol : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        StartCoroutine(DelayCoroutine());
+        waypointIndex = 0;
+        UpdateDestination();
     }
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, target) < 1)
+        if (agent.remainingDistance < 1f && !agent.pathPending)
         {
             IterateWaypointIndex();
             UpdateDestination();
@@ -35,15 +36,9 @@ public class AIPatrol : MonoBehaviour
     void IterateWaypointIndex()
     {
         waypointIndex++;
-        if (waypointIndex == waypoints.Length)
+        if (waypointIndex >= waypoints.Length)
         {
             waypointIndex = 0;
         }
-    }
-
-    IEnumerator DelayCoroutine()
-    {
-        yield return new WaitForSeconds(delayTime);
-        UpdateDestination();
     }
 }

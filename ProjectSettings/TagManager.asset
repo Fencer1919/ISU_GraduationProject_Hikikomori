@@ -11,6 +11,7 @@ TagManager:
   - Laser
   - Enemy
   - NPC
+  - NB1
   layers:
   - Default
   - TransparentFX
