@@ -844,11 +844,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 34.334248, y: 44.38111}
+  scrollPos: {x: -9.94582, y: 246.71785}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 359.8
-  zoom: 0.54999995
+  zoom: 0.75999975
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -856,7 +856,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 411987247}
+  - {fileID: 411987265}
   selectedCommands: []
   variables: []
   description: 
@@ -885,7 +885,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 99.7478
     y: 76.89174
-    width: 116.909096
+    width: 111.842125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -940,7 +940,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 269.0992
     y: 79.42496
-    width: 92.18182
+    width: 90.78949
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1049,7 +1049,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 443.58118
     y: 110.53948
-    width: 111.09091
+    width: 107.89476
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1192,7 +1192,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 451.08362
     y: 43.253204
-    width: 74.72727
+    width: 73.68422
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1314,7 +1314,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 587.346
     y: 38.979263
-    width: 109.63637
+    width: 105.263176
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1502,7 +1502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 0
-  storyText: i have some kind of an illness and it's hard for me to leave the house..
+  storyText: I just like being indoors rather than outside.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1531,7 +1531,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 762.21106
     y: 37.936707
-    width: 86.36364
+    width: 84.21054
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1833,7 +1833,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 917.55383
     y: 39.30657
-    width: 115.45455
+    width: 111.842125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2351,6 +2351,7 @@ GameObject:
   - component: {fileID: 814928738}
   - component: {fileID: 814928737}
   - component: {fileID: 814928741}
+  - component: {fileID: 814928745}
   m_Layer: 6
   m_Name: Capsule
   m_TagString: NPC
@@ -2439,7 +2440,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814928736}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0999466, y: 2.1, z: 0.7000001}
@@ -2508,6 +2509,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!114 &814928745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814928736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e1116b52c5e28418fec37fe3992956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fungusFlowchart: {fileID: 411987246}
+  dialogBlockName: Neighbour2
 --- !u!1 &828325103
 GameObject:
   m_ObjectHideFlags: 0
