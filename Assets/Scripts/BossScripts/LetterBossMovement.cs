@@ -43,7 +43,7 @@ public class LetterBossMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.CompareTag("Playerz"))
+        if (collision.transform.CompareTag("Player"))
         {
             Debug.Log("Crashed");
             //TODO UI Manager

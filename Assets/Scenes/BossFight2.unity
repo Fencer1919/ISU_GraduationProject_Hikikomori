@@ -6145,7 +6145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &802323192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6189,7 +6189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee1821c75e5c4085a99ba8e5d6f4ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: GameScene
+  nextLevel: GameScene2
 --- !u!4 &808757651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b9ef246920b669448bd95f8ccbfb3b37, type: 3}
@@ -6705,7 +6705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &950450406
 RectTransform:
   m_ObjectHideFlags: 0
