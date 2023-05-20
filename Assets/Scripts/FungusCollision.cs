@@ -5,14 +5,17 @@ public class FungusCollision : MonoBehaviour
 {
     public Flowchart fungusFlowchart;
     public string dialogBlockName;
+    private bool dialogTriggered = false;
 
     private void OnCollisionEnter(UnityEngine.Collision collision)
     {
-        // Check if the collision object has the tag "Player" (you can customize the tag)
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !dialogTriggered)
         {
             // Trigger the Fungus dialog flowchart block
             fungusFlowchart.ExecuteBlock(dialogBlockName);
+
+            // Set the dialogTriggered variable to true to prevent further triggering
+            dialogTriggered = true;
         }
     }
 }
