@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: f308ceb3b4dccb749b0be32fb12be233
+guid: c01a245521ff767429b64f8dd4d24f06
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Sitting Idle
+    second: Sitting Rubbing Arm
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Sitting Idle
+      name: Sitting Rubbing Arm
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 129
+      lastFrame: 239
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
