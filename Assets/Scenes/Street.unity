@@ -450,6 +450,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5323162407277330719, guid: e1ec7ad54751cb44ab1b00f8eeffd7b1, type: 3}
   m_PrefabInstance: {fileID: 523208695}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &316687704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316687702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023275707, y: 0.022304978, z: 0.016189415}
+  m_Center: {x: -0.003295462, y: 0.011480639, z: 0.0022942296}
 --- !u!114 &316687705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,19 +477,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fungusFlowchart: {fileID: 581001301}
   dialogBlockName: Torbaci
---- !u!65 &316687706
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316687702}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.018468646, y: 0.022304978, z: 0.01110164}
-  m_Center: {x: -0.0008919322, y: 0.011480639, z: -0.0002496594}
 --- !u!54 &316687707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -896,7 +896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1ec7ad54751cb44ab1b00f8eeffd7b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.38
+      value: 15.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1ec7ad54751cb44ab1b00f8eeffd7b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -904,7 +904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1ec7ad54751cb44ab1b00f8eeffd7b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 46.05
+      value: 38.58
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e1ec7ad54751cb44ab1b00f8eeffd7b1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1033,7 +1033,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 581001319}
+  - {fileID: 581001300}
   selectedCommands: []
   variables: []
   description: 
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   sayDialog: {fileID: 1576769163}
 --- !u!114 &581001307
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &581001308
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1185,7 +1185,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &581001309
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1212,7 +1212,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &581001310
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4493,7 +4493,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.33333334
+  m_VoxelSize: 0.23333333
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 129f1e5327b356d4b9d2eeada1c5ba8d, type: 2}
   m_BuildHeightMesh: 0
