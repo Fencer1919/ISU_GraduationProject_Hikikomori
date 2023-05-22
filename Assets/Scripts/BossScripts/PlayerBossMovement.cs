@@ -72,10 +72,10 @@ public class PlayerBossMovement : MonoBehaviour
 
         if (playerAnimator)
         {
-            //playerAnimator.SetBool("isRightJumping", true);
+            playerAnimator.SetTrigger("isJumping");
         }
 
-        if(rightPos == false)
+        if (rightPos == false)
         {
             transform.DOMove(rightPosition.gameObject.transform.position, 1f);
         }
@@ -100,7 +100,7 @@ public class PlayerBossMovement : MonoBehaviour
 
         if (playerAnimator)
         {
-            //playerAnimator.SetBool("isLeftJumping", true);
+            playerAnimator.SetTrigger("isJumping");
         }
         
         if(leftPos == false)
