@@ -2554,7 +2554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageToFade: {fileID: 1400091896}
   fadeDuration: 0.2
-  nextSceneName: BossFight3
+  nextSceneName: BossFight2
   isCollided: 0
   sceneTransition: {fileID: 1777761569}
   blinkingImage: {fileID: 1400091896}
@@ -3762,7 +3762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d2024114bbba243af56f342fbe4512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: BossFight3
+  nextSceneName: BossFight2
   waitingTime: 10
 --- !u!4 &1777761570
 Transform:
