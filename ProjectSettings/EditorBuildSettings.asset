@@ -41,4 +41,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossFight3.unity
     guid: 8a327fffabcd1ce429b4f8d08cef9f27
+  - enabled: 1
+    path: Assets/Scenes/0.unity
+    guid: fd8ff783642519345b981440faa812e6
+  - enabled: 1
+    path: Assets/Scenes/BossFight2.unity
+    guid: e2b659b70aa6ee44eb8372a8238480e5
+  - enabled: 1
+    path: Assets/Scenes/Bus_stop2.unity
+    guid: 23fe4771f27017f49b2af699a4e64c49
+  - enabled: 1
+    path: Assets/Scenes/BusInside.unity
+    guid: 5df996c7473aa324e8b2d7c3d2e94ef8
+  - enabled: 1
+    path: Assets/Scenes/BusInside2.unity
+    guid: 1e0fc1ad86bbc8642a2ddbc0bd0816ae
   m_configObjects: {}
