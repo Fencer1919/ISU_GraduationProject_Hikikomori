@@ -6,7 +6,8 @@ using DG.Tweening;
 public class BossMovement : MonoBehaviour
 {
     public GameObject bossMouth;
-    
+    public float bossPosition = -3.5f;
+    public float bossSpeed = 1f;
     void Start()
     {
         Yoyoying();
@@ -14,6 +15,6 @@ public class BossMovement : MonoBehaviour
 
     private void Yoyoying()
     {
-        bossMouth.transform.DOMoveY(-3.5f, 1f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+        bossMouth.transform.DOMoveY(bossPosition, bossSpeed).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
     }
 }
