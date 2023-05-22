@@ -34,7 +34,7 @@ public class LetterBossMovement : MonoBehaviour
 
     public void SpawnLetters()
     {
-        int spawnPointNumber = Random.Range(0,3);
+        int spawnPointNumber = Random.Range(0,6);
         int letterNumber = Random.Range(0,8);
         
         Instantiate(letters[letterNumber],spawnPositions[spawnPointNumber].transform.position,Quaternion.Euler(0f,90f,0f));

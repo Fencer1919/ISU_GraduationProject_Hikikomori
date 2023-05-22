@@ -13542,6 +13542,9 @@ MonoBehaviour:
   - {fileID: 388257497}
   - {fileID: 191115996}
   - {fileID: 1497851444}
+  - {fileID: 388257497}
+  - {fileID: 191115996}
+  - {fileID: 1497851444}
   waitingSpeed: 1
   playerBossMovement: {fileID: 650054638}
 --- !u!1001 &1936225051
