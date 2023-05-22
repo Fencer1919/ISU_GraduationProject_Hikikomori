@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - NPC
   - NB1
+  - Cashier
   layers:
   - Default
   - TransparentFX

@@ -107,7 +107,7 @@ public class Movement : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Mother"))
+        if (other.CompareTag("Mother") || other.CompareTag("Cashier"))
         {
             imagePanel.SetActive(true);
             sceneBlink.isCollided = true;
