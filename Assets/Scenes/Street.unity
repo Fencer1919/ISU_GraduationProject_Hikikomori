@@ -3216,7 +3216,6 @@ GameObject:
   - component: {fileID: 581001303}
   - component: {fileID: 581001319}
   - component: {fileID: 581001318}
-  - component: {fileID: 581001317}
   - component: {fileID: 581001316}
   - component: {fileID: 581001315}
   - component: {fileID: 581001314}
@@ -3226,6 +3225,7 @@ GameObject:
   - component: {fileID: 581001310}
   - component: {fileID: 581001309}
   - component: {fileID: 581001308}
+  - component: {fileID: 581001317}
   - component: {fileID: 581001307}
   m_Layer: 0
   m_Name: TorbaciFlowchart
@@ -3288,8 +3288,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 581001300}
-  selectedCommands: []
+  - {fileID: 581001319}
+  selectedCommands:
+  - {fileID: 581001307}
   variables: []
   description: 
   stepPause: 0
@@ -3406,10 +3407,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 581001299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 23
+  itemId: 25
   indentLevel: 0
 --- !u!114 &581001308
 MonoBehaviour:
@@ -3651,10 +3652,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 581001299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 13
+  itemId: 24
   indentLevel: 0
 --- !u!114 &581001318
 MonoBehaviour:
@@ -10430,7 +10431,6 @@ GameObject:
   - component: {fileID: 972332941}
   - component: {fileID: 972332940}
   - component: {fileID: 972332939}
-  - component: {fileID: 972332938}
   - component: {fileID: 972332937}
   - component: {fileID: 972332936}
   - component: {fileID: 972332935}
@@ -10456,8 +10456,9 @@ GameObject:
   - component: {fileID: 972332952}
   - component: {fileID: 972332951}
   - component: {fileID: 972332950}
-  - component: {fileID: 972332949}
   - component: {fileID: 972332948}
+  - component: {fileID: 972332949}
+  - component: {fileID: 972332938}
   m_Layer: 0
   m_Name: AlexFlowchart
   m_TagString: Untagged
@@ -10546,8 +10547,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 972332915}
-  selectedCommands: []
+  - {fileID: 972332939}
+  selectedCommands:
+  - {fileID: 972332938}
   variables: []
   description: 
   stepPause: 0
@@ -11111,17 +11113,17 @@ MonoBehaviour:
     booleanVal: 0
 --- !u!114 &972332938
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972332913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 11
+  itemId: 40
   indentLevel: 0
 --- !u!114 &972332939
 MonoBehaviour:
@@ -11342,7 +11344,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 972332913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 38
@@ -11356,10 +11358,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 972332913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 37
+  itemId: 39
   indentLevel: 0
 --- !u!114 &972332950
 MonoBehaviour:
@@ -15834,7 +15836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 581001301}
+  selectedFlowchart: {fileID: 972332916}
 --- !u!4 &1857399589
 Transform:
   m_ObjectHideFlags: 1

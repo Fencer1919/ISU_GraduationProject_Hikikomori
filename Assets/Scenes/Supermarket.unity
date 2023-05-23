@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 108642784}
   - component: {fileID: 108642783}
   - component: {fileID: 108642785}
+  - component: {fileID: 108642786}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -485,7 +486,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &108642785
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -500,6 +501,20 @@ MonoBehaviour:
   tagFilter: []
   FireOn: 1
   colliderVar: {fileID: 0}
+--- !u!114 &108642786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108642782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
 --- !u!114 &108642788
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -826,6 +841,7 @@ MonoBehaviour:
   - {fileID: 108642788}
   - {fileID: 108642784}
   - {fileID: 108642783}
+  - {fileID: 108642786}
   suppressAllAutoSelections: 0
 --- !u!114 &108642801
 MonoBehaviour:
@@ -853,7 +869,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 108642800}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 108642786}
   variables: []
   description: 
   stepPause: 0

@@ -751,9 +751,7 @@ GameObject:
   - component: {fileID: 411987285}
   - component: {fileID: 411987284}
   - component: {fileID: 411987283}
-  - component: {fileID: 411987282}
   - component: {fileID: 411987253}
-  - component: {fileID: 411987255}
   - component: {fileID: 411987257}
   - component: {fileID: 411987294}
   - component: {fileID: 411987262}
@@ -762,6 +760,8 @@ GameObject:
   - component: {fileID: 411987264}
   - component: {fileID: 411987263}
   - component: {fileID: 411987256}
+  - component: {fileID: 411987277}
+  - component: {fileID: 411987255}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -782,11 +782,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -58.561028, y: 217.13063}
+  scrollPos: {x: 19.015627, y: 294.70312}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 359.8
-  zoom: 0.97
+  zoom: 0.7600002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -794,8 +794,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 411987260}
-  selectedCommands: []
+  - {fileID: 411987253}
+  selectedCommands:
+  - {fileID: 411987255}
   variables: []
   description: 
   stepPause: 0
@@ -823,7 +824,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 107.35767
     y: 78.20753
-    width: 117.01031
+    width: 111.84209
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -875,7 +876,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 269.0992
     y: 79.42496
-    width: 93.298965
+    width: 90.78946
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -983,7 +984,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 443.58118
     y: 110.53948
-    width: 112.8866
+    width: 107.894714
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1010,17 +1011,17 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &411987255
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411987245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 40
+  itemId: 64
   indentLevel: 0
 --- !u!114 &411987256
 MonoBehaviour:
@@ -1126,7 +1127,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 451.08362
     y: 43.253204
-    width: 75.77319
+    width: 73.684204
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1229,7 +1230,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 586.31506
     y: 38.979263
-    width: 109.79381
+    width: 105.26314
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1442,7 +1443,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 762.21106
     y: 37.936707
-    width: 87.1134
+    width: 84.21052
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1519,7 +1520,7 @@ MonoBehaviour:
   itemId: 59
   indentLevel: 0
   sayDialog: {fileID: 2108490806}
---- !u!114 &411987282
+--- !u!114 &411987277
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1528,10 +1529,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 411987245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e1337544a71d4d5dab5510fe86ddca8, type: 3}
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 32
+  itemId: 63
   indentLevel: 0
 --- !u!114 &411987283
 MonoBehaviour:
@@ -1630,7 +1631,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 917.55383
     y: 39.30657
-    width: 115.97938
+    width: 111.84209
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1644,7 +1645,7 @@ MonoBehaviour:
   - {fileID: 411987284}
   - {fileID: 411987283}
   - {fileID: 411987256}
-  - {fileID: 411987282}
+  - {fileID: 411987277}
   suppressAllAutoSelections: 0
 --- !u!114 &411987294
 MonoBehaviour:
