@@ -16,7 +16,8 @@ public class UIManager : MonoBehaviour
 
     public void OpenLetter()
     {
+       Debug.Log("letter opened");
         letterPanel.SetActive(true);
-        letterScrollRect.verticalNormalizedPosition = 1f; // scroll to top
+        //letterScrollRect.verticalNormalizedPosition = 1f; // scroll to top
     }
 }

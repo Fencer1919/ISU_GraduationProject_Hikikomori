@@ -18,6 +18,7 @@ public class PlayerBossMovement : MonoBehaviour
     public GameObject player;
     public Animator playerAnimator;
     public Rigidbody playerRb;
+    public BoxCollider playerCollider;
     
     public SceneManagement sceneManagement;
 
@@ -130,5 +131,6 @@ public class PlayerBossMovement : MonoBehaviour
     public void StopMovement()
     {
         isGameStarted = false;
+        playerCollider.enabled = false;
     }
 }

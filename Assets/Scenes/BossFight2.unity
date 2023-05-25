@@ -6167,7 +6167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee1821c75e5c4085a99ba8e5d6f4ef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: GameScene2
+  nextLevel: Supermarket2
 --- !u!4 &808757651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b9ef246920b669448bd95f8ccbfb3b37, type: 3}
@@ -12253,6 +12253,7 @@ MonoBehaviour:
   player: {fileID: 189437631}
   playerAnimator: {fileID: 189437630}
   playerRb: {fileID: 189437632}
+  playerCollider: {fileID: 1669339253}
   sceneManagement: {fileID: 802323194}
   isGameStarted: 0
 --- !u!4 &1669339255

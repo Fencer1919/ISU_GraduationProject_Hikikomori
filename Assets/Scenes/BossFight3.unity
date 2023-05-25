@@ -12126,6 +12126,7 @@ MonoBehaviour:
   player: {fileID: 189437631}
   playerAnimator: {fileID: 189437630}
   playerRb: {fileID: 189437632}
+  playerCollider: {fileID: 1669339253}
   sceneManagement: {fileID: 802323194}
   isGameStarted: 0
 --- !u!4 &1669339255

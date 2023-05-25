@@ -1197,9 +1197,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.40448555, g: 0.45367438, b: 0.49056602, a: 1}
-    m_HighlightedColor: {r: 0.99215686, g: 0.8980392, b: 0.3137255, a: 1}
-    m_PressedColor: {r: 0.99215686, g: 0.8980392, b: 0.3137255, a: 1}
+    m_NormalColor: {r: 0.32156864, g: 0.39607844, b: 0.45882353, a: 1}
+    m_HighlightedColor: {r: 0.9411765, g: 0.8392157, b: 0.49803922, a: 1}
+    m_PressedColor: {r: 0.9411765, g: 0.8392157, b: 0.49803922, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -11521,6 +11521,7 @@ MonoBehaviour:
   player: {fileID: 120219008}
   playerAnimator: {fileID: 120219007}
   playerRb: {fileID: 120219009}
+  playerCollider: {fileID: 1570469072}
   sceneManagement: {fileID: 802323194}
   isGameStarted: 0
 --- !u!4 &1570469071

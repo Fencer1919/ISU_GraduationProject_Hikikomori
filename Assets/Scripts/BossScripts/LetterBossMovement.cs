@@ -49,6 +49,8 @@ public class LetterBossMovement : MonoBehaviour
             //TODO UI Manager
         }
     }
+
+  
     
     
 }

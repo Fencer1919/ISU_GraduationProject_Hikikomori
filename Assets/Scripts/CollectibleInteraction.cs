@@ -6,16 +6,27 @@ public class CollectibleInteraction : MonoBehaviour
 {
     public UIManager uiManager;
     public GameObject collectibleInteract;
+    private bool triggerEntered = false;
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.E))
+        OpenLetter();
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    { 
+        triggerEntered = true;
+    }
+
+    private void OpenLetter()
+    {
+        if (triggerEntered)
         {
-            if (Vector3.Distance(transform.position, collectibleInteract.transform.position) < 2f)
+            if (Input.GetKeyUp(KeyCode.E))
             {
                 uiManager.OpenLetter();
             }
         }
     }
+    
 }
