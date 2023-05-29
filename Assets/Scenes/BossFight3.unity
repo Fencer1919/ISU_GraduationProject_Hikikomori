@@ -3334,7 +3334,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.9056604, g: 0.071769245, b: 0.071769245, a: 1}
+  m_Color: {r: 1, g: 0.98475426, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 75.8
   m_SpotAngle: 30
@@ -3393,7 +3393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386763960}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 11.8, z: 22.6}
+  m_LocalPosition: {x: 0, y: 11.8, z: 28.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5402,7 +5402,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.9550684, g: 1, b: 0.07924521, a: 1}
+  m_Color: {r: 0.636292, g: 1, b: 0.07843137, a: 1}
   m_Intensity: 1
   m_Range: 40.1
   m_SpotAngle: 30
@@ -13243,7 +13243,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 22
     m_FontStyle: 1
     m_BestFit: 0
