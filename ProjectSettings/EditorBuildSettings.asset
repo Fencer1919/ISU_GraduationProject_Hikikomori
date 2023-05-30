@@ -30,8 +30,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Supermarket_outside.unity
     guid: 5169c8846aff7614d9e99c6ba871be34
   - enabled: 1
+    path: Assets/Scenes/Supermarket_outside2.unity
+    guid: 97b2ec1ba68d55b44adb9fc6c37b9d63
+  - enabled: 1
     path: Assets/Scenes/Supermarket.unity
     guid: 7b9752047a4eac24983a4ad5f38d60a4
+  - enabled: 1
+    path: Assets/Scenes/Supermarket2.unity
+    guid: bf2a48b6a2e5d514595b3c2b61a9653a
   - enabled: 1
     path: Assets/Scenes/Bus_stop.unity
     guid: 2f21d7c483dd07c4d9723645445b1a3a
@@ -59,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cafe_Inside.unity
     guid: 50f7559f15cca3d459510bb40dc794f3
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 9b9692166dfdfa04aaaa004cd3e9b80f
   m_configObjects: {}

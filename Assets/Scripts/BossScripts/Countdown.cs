@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,11 @@ public class Countdown : MonoBehaviour
         currentTime = duration;
         timeText.text = currentTime.ToString();
         StartCoroutine(CountdownTime());
+    }
+
+    private void Update()
+    {
+        Debug.Log(currentTime);
     }
 
     private IEnumerator CountdownTime () {

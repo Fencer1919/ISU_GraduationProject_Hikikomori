@@ -3513,7 +3513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 305cdb3788c96674e9f29e3e79946218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Supermarket_outside
+  nextScene: Supermarket_outside2
 --- !u!65 &1789120186
 BoxCollider:
   m_ObjectHideFlags: 0

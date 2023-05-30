@@ -21,6 +21,9 @@ public class PlayerBossMovement : MonoBehaviour
     public BoxCollider playerCollider;
     
     public SceneManagement sceneManagement;
+    public Countdown countdown;
+
+    public float specialLetterTimeDecrease = 30f;
 
     public bool isGameStarted = false;
     // Start is called before the first frame update
@@ -40,17 +43,7 @@ public class PlayerBossMovement : MonoBehaviour
         }
         
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.transform.CompareTag("Letter"))
-        {
-            //SoundManager.Instance.PlaySound(SoundManager.SoundTypes.Crash);
-            //collision.transform.GetComponent<MeshRenderer>().enabled = false;
-            //collision.transform.GetComponent<BoxCollider>().enabled = false;
-            
-        }
-    }
-
+ 
     public void ButtonChecking()
     {
         if (Input.GetKeyDown("d") || Input.GetKeyDown(KeyCode.RightArrow))
@@ -124,7 +117,18 @@ public class PlayerBossMovement : MonoBehaviour
         if (collision.transform.CompareTag("Letter"))
         {
             sceneManagement.GameRestart();
-            Debug.Log("Collided");
+        }
+        
+        if (collision.transform.CompareTag("SpecialLetters"))
+        {
+            if (countdown.currentTime - specialLetterTimeDecrease <= 0)
+            {
+                countdown.currentTime = 0;
+            }
+            else
+            {
+                countdown.currentTime -= specialLetterTimeDecrease;
+            }
         }
     }
 

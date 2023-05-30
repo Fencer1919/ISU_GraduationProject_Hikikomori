@@ -12128,6 +12128,8 @@ MonoBehaviour:
   playerRb: {fileID: 189437632}
   playerCollider: {fileID: 1669339253}
   sceneManagement: {fileID: 802323194}
+  countdown: {fileID: 783623405}
+  specialLetterTimeDecrease: 30
   isGameStarted: 0
 --- !u!4 &1669339255
 Transform:
@@ -13369,6 +13371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1928808505}
   - component: {fileID: 1928808506}
+  - component: {fileID: 1928808507}
   m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
@@ -13423,6 +13426,29 @@ MonoBehaviour:
   - {fileID: 1497851444}
   waitingSpeed: 1
   playerBossMovement: {fileID: 1669339254}
+--- !u!114 &1928808507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928808504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2255369fca1a7654fa03c4c1eedc8af3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letterBossMovement: {fileID: 1928808506}
+  specialLetters:
+  - {fileID: 5773088279184523168, guid: 71ff2e5a8bb64454b8a1868e8c17c895, type: 3}
+  - {fileID: 4175884786481329085, guid: c56d77540bce2814a9696c358974d04e, type: 3}
+  - {fileID: 5398211874312947277, guid: 833f1aca356ebb34d80a903a2d17095a, type: 3}
+  - {fileID: 1650054864107416963, guid: a9f6db7c5427ac947ab96cd3de84f5c8, type: 3}
+  - {fileID: 5852360894795768147, guid: 52df821936f738f44bb3f5b56ef52474, type: 3}
+  highChance: 0.2
+  midChance: 0.02
+  lowChance: 0.01
+  bossLevel: three
 --- !u!1001 &1936225051
 PrefabInstance:
   m_ObjectHideFlags: 0

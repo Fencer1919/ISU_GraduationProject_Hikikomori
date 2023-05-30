@@ -17,6 +17,11 @@ public class CollectibleInteraction : MonoBehaviour
     { 
         triggerEntered = true;
     }
+    
+    private void OnTriggerExit(Collider other)
+    { 
+        triggerEntered = false;
+    }
 
     private void OpenLetter()
     {

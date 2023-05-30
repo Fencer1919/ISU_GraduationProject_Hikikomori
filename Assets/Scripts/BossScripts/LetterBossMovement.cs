@@ -46,7 +46,6 @@ public class LetterBossMovement : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             Debug.Log("Crashed");
-            //TODO UI Manager
         }
     }
 

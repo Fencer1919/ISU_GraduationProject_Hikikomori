@@ -1351,6 +1351,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1737647998, guid: d222ab52e74259e4e9787fc25ba0c578, type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4947967112442161620, guid: d222ab52e74259e4e9787fc25ba0c578, type: 3}
       propertyPath: m_Name
       value: daichi@Orc Idle Variant
