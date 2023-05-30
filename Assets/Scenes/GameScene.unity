@@ -11406,9 +11406,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 586990d44f783094b850838115315f55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowMouth: {fileID: 962870064}
+  arrow: {fileID: 962870064}
   arrowPosition: -22.38
   arrowSpeed: 0.7
+  sceneName: empty
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

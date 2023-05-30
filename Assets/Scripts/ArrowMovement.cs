@@ -5,9 +5,10 @@ using DG.Tweening;
 
 public class ArrowMovement : MonoBehaviour
 {
-     public GameObject arrowMouth;
+     public GameObject arrow;
        public float arrowPosition = -3.5f;
        public float arrowSpeed = 1f;
+       public string sceneName = "empty";
        void Start()
        {
            Yoyoying();
@@ -15,6 +16,18 @@ public class ArrowMovement : MonoBehaviour
    
        private void Yoyoying()
        {
-           arrowMouth.transform.DOMoveX(arrowPosition, arrowSpeed).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+           if (sceneName == "street")
+           {
+               arrow.transform.DOMoveZ(arrowPosition, arrowSpeed).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+           }
+           else if (sceneName == "supermarket")
+           {
+               arrow.transform.DOMoveY(arrowPosition, arrowSpeed).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+           }
+           else
+           {
+               arrow.transform.DOMoveX(arrowPosition, arrowSpeed).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+           }
+         
        }
 }
