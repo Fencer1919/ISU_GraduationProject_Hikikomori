@@ -45,7 +45,7 @@ public class LetterBossMovement : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            Debug.Log("Crashed");
+            SoundManager.Instance.PlayBossSound(SoundManager.BossSoundTypes.Negative);
         }
     }
 

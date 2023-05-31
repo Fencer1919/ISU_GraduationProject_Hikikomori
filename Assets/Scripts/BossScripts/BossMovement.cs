@@ -11,10 +11,15 @@ public class BossMovement : MonoBehaviour
     void Start()
     {
         Yoyoying();
+        SpawnLaugh();
     }
 
     private void Yoyoying()
     {
         bossMouth.transform.DOMoveY(bossPosition, bossSpeed).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+    }
+    private void SpawnLaugh()
+    {
+        SoundManager.Instance.PlayBossSound(SoundManager.BossSoundTypes.Boss);
     }
 }

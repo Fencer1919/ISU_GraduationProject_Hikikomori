@@ -6,13 +6,25 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
         
-        public enum SoundTypes {Boss , Crash};
-        public enum BgMusicTypes {MainBgMusic};
+        public enum BossSoundTypes {Boss , Battle , Negative , Positive};
+        public enum MainSoundTypes {MainBgMusic , Walking};
+        public enum UISoundTypes {Click};
         
-        public AudioSource jumpSound;
-        public AudioSource crashSound;
+        [Header("Boss Sounds")]
+        public AudioSource bossSound;
+        public AudioSource bossBattleSound;
+        public AudioSource crashNegativeWordSound;
+        public AudioSource crashPositiveWordSound;
         
-        public AudioSource bgMusic;
+        [Header("Main Sounds")]
+        public AudioSource bgSound;
+        public AudioSource walkingSound;
+        
+        [Header("UI")]
+        public AudioSource clickSound;
+
+        [Header("Scene Check")]
+        public string sceneCheck = "normal";
     
         public void Awake()
         {
@@ -29,38 +41,78 @@ public class SoundManager : MonoBehaviour
         // Start is called before the first frame update
         void Start()
         {
-            bgMusic.Play();
-            bgMusic.volume = 0.2f;
+            if (sceneCheck == "boss")
+            {
+                bossBattleSound.Play();
+                bossBattleSound.volume = 0.02f;
+            }
+            else if (sceneCheck == "ui")
+            {
+                
+            }
+            else
+            {
+                bgSound.Play();
+                bgSound.volume = 0.02f;
+            }
         }
         
-        public void PlayBgMusic(BgMusicTypes currentMusic)
+        public void PlayMainMusic(MainSoundTypes currentMusic)
         {
             switch (currentMusic)
             {
-                case BgMusicTypes.MainBgMusic:
-                    bgMusic.Play();
-                    bgMusic.volume = 0.1f;
+                case MainSoundTypes.MainBgMusic:
+                    bgSound.Play();
+                    bgSound.volume = 0.1f;
+                    break;
+                case MainSoundTypes.Walking:
+                    walkingSound.Play();
                     break;
             }
         }
     
-        public void PlaySound(SoundTypes currentSound)
+        public void PlayBossSound(BossSoundTypes currentBossSound)
         {
-            switch (currentSound)
+            switch (currentBossSound)
             {
-                case SoundTypes.Boss:
-                    jumpSound.Play();
+                case BossSoundTypes.Boss:
+                    bossSound.Play();
                     break;
-                case SoundTypes.Crash:
-                    crashSound.Play();
+                case BossSoundTypes.Battle:
+                    bossBattleSound.Play();
                     break;
+                case BossSoundTypes.Negative:
+                    crashNegativeWordSound.Play();
+                    break;
+                case BossSoundTypes.Positive:
+                    crashPositiveWordSound.Play();
+                    break;
+            }
+        }
+        
+        public void PlayMainSound(UISoundTypes currentUISound)
+        {
+            switch (currentUISound)
+            {
+                case UISoundTypes.Click:
+                    clickSound.Play();
+                    break;
+            }
+        }
+        
+        public void StopMainSound(UISoundTypes currentUISound)
+        {
+            switch (currentUISound)
+            {
+                case UISoundTypes.Click:
+                    clickSound.Stop();
+                    break;
+                
             }
         }
     
         public void VoiceOff()
         {
-            bgMusic.volume = 0.0f;
-            jumpSound.volume = 0.0f;
-            crashSound.volume = 0.0f;
+            bgSound.volume = 0.0f;
         }
 }

@@ -116,6 +116,7 @@ public class PlayerBossMovement : MonoBehaviour
     {
         if (collision.transform.CompareTag("Letter"))
         {
+            SoundManager.Instance.PlayBossSound(SoundManager.BossSoundTypes.Negative);
             sceneManagement.GameRestart();
         }
         

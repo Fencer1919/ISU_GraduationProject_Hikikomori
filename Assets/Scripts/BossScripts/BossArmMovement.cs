@@ -11,6 +11,8 @@ public class BossArmMovement : MonoBehaviour
     {
         YoyoyingLeft();
         YoyoyingRight();
+        SpawnLaugh();
+
     }
 
     private void YoyoyingLeft()
@@ -22,4 +24,11 @@ public class BossArmMovement : MonoBehaviour
     {
         bossRightArm.transform.DORotate(new Vector3(0f,0f,-5.86f), 1f).SetLoops(-1, LoopType.Yoyo);
     }
+        
+
+    private void SpawnLaugh()
+    {
+        SoundManager.Instance.PlayBossSound(SoundManager.BossSoundTypes.Boss);
+    }
+
 }

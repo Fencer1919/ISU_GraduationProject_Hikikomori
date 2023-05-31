@@ -59,11 +59,23 @@ public class Movement : MonoBehaviour
            || Input.GetAxis("Horizontal") != 0 && Input.GetAxis("Vertical") == 0
            ||Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") != 0) {
             animator.SetBool("isWalking",true);
+            //SoundManager.Instance.PlayMainMusic(SoundManager.MainSoundTypes.Walking);
         }
         else
         {
             animator.SetBool("isWalking",false);
 
+        }
+        
+        //for sound
+        bool isMoving = (horizontalInput != 0f || verticalInput != 0f);
+        if (isMoving && !SoundManager.Instance.walkingSound.isPlaying)
+        {
+            SoundManager.Instance.walkingSound.Play();
+        }
+        else if (!isMoving && SoundManager.Instance.walkingSound.isPlaying)
+        {
+            SoundManager.Instance.walkingSound.Stop();
         }
     }
 
@@ -71,7 +83,6 @@ public class Movement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-        
         
     }
 

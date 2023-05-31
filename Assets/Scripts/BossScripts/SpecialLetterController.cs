@@ -13,6 +13,7 @@ public class SpecialLetterController : MonoBehaviour
         }
         else if (collision.transform.CompareTag("Player"))
         {
+            SoundManager.Instance.PlayBossSound(SoundManager.BossSoundTypes.Positive);
             Destroy(gameObject);
         }
     }
