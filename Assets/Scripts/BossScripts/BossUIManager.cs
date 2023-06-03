@@ -24,5 +24,6 @@ public class BossUIManager : MonoBehaviour
         bossCompletedPanel.SetActive(true);
         timerPanel.SetActive(false);
         SoundManager.Instance.sceneCheck = "normal";
+        SoundManager.Instance.OnSceneChanged();
     }
 }

@@ -3017,7 +3017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5884922109179764783, guid: cf1c61bb1a1f6f248a1cf71ef58c9866, type: 3}
       propertyPath: sceneCheck
-      value: '-'
+      value: ui
       objectReference: {fileID: 0}
     - target: {fileID: 5884922110167024651, guid: cf1c61bb1a1f6f248a1cf71ef58c9866, type: 3}
       propertyPath: Loop

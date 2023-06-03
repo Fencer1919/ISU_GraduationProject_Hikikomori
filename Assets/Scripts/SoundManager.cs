@@ -43,10 +43,16 @@ public class SoundManager : MonoBehaviour
         // Start is called before the first frame update
         void Start()
         {
+           OnSceneChanged();
+        }
+
+        public void OnSceneChanged()
+        {
             if (sceneCheck == "boss")
             {
                 bossBattleSound.Play();
                 bossBattleSound.volume = 0.02f;
+                bgSound.Stop();
             }
             else if (sceneCheck == "ui")
             {
@@ -54,11 +60,11 @@ public class SoundManager : MonoBehaviour
             }
             else
             {
+                bossBattleSound.Stop();
                 bgSound.Play();
                 bgSound.volume = 0.02f;
             }
         }
-
 
         public void PlayMainMusic(MainSoundTypes currentMusic)
         {
@@ -86,7 +92,6 @@ public class SoundManager : MonoBehaviour
                     break;
                 case BossSoundTypes.Battle:
                     bossBattleSound.Play();
-                    bgSound.volume = 0.1f;
                     break;
                 case BossSoundTypes.Negative:
                     crashNegativeWordSound.Play();
@@ -117,9 +122,5 @@ public class SoundManager : MonoBehaviour
                 
             }
         }
-    
-        public void VoiceOff()
-        {
-            bgSound.volume = 0.0f;
-        }
+        
 }

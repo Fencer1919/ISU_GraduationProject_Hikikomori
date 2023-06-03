@@ -11,6 +11,7 @@ public class BossMovement : MonoBehaviour
     void Start()
     {   
         SoundManager.Instance.sceneCheck = "boss";
+        SoundManager.Instance.OnSceneChanged();
         Yoyoying();
         SpawnLaugh();
     }
