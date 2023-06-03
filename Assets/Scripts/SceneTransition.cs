@@ -19,5 +19,6 @@ public class SceneTransition : MonoBehaviour
     {
         yield return new WaitForSeconds(waitingTime);
         SceneManager.LoadScene(nextSceneName);
+        SoundManager.Instance.sceneCheck = "boss";
     }
 }

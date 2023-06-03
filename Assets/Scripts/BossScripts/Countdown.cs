@@ -19,7 +19,7 @@ public class Countdown : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(currentTime);
+  
     }
 
     private IEnumerator CountdownTime () {

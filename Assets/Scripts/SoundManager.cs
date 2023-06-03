@@ -59,15 +59,6 @@ public class SoundManager : MonoBehaviour
             }
         }
 
-        private void FixedUpdate()
-        {
-            if (sceneCheck == "boss")
-            {
-                bgSound.Stop();
-                bossBattleSound.Play();
-                bossBattleSound.volume = 0.02f;
-            }
-        }
 
         public void PlayMainMusic(MainSoundTypes currentMusic)
         {
@@ -95,6 +86,7 @@ public class SoundManager : MonoBehaviour
                     break;
                 case BossSoundTypes.Battle:
                     bossBattleSound.Play();
+                    bgSound.volume = 0.1f;
                     break;
                 case BossSoundTypes.Negative:
                     crashNegativeWordSound.Play();
