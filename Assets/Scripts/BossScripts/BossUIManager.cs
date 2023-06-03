@@ -23,5 +23,6 @@ public class BossUIManager : MonoBehaviour
         playerBossMovement.StopMovement();
         bossCompletedPanel.SetActive(true);
         timerPanel.SetActive(false);
+        SoundManager.Instance.sceneCheck = "normal";
     }
 }

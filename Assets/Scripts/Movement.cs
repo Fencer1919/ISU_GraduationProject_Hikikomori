@@ -122,6 +122,7 @@ public class Movement : MonoBehaviour
         {
             imagePanel.SetActive(true);
             sceneBlink.isCollided = true;
+            SoundManager.Instance.PlayMainMusic(SoundManager.MainSoundTypes.Trigger);
         }
     }
     

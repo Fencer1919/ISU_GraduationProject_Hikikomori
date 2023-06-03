@@ -12,7 +12,7 @@ public class BossArmMovement : MonoBehaviour
         YoyoyingLeft();
         YoyoyingRight();
         SpawnLaugh();
-
+        SoundManager.Instance.sceneCheck = "boss";
     }
 
     private void YoyoyingLeft()

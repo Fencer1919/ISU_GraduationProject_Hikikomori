@@ -10,6 +10,7 @@ public class BossMovement : MonoBehaviour
     public float bossSpeed = 1f;
     void Start()
     {
+        SoundManager.Instance.sceneCheck = "boss";
         Yoyoying();
         SpawnLaugh();
     }

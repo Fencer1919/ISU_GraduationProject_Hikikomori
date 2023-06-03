@@ -10691,7 +10691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: BossFight1
-  waitingTime: 10
+  waitingTime: 5
 --- !u!4 &776367694
 Transform:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance;
         
         public enum BossSoundTypes {Boss , Battle , Negative , Positive};
-        public enum MainSoundTypes {MainBgMusic , Walking};
+        public enum MainSoundTypes {MainBgMusic , Walking , Trigger};
         public enum UISoundTypes {Click};
         
         [Header("Boss Sounds")]
@@ -19,6 +20,7 @@ public class SoundManager : MonoBehaviour
         [Header("Main Sounds")]
         public AudioSource bgSound;
         public AudioSource walkingSound;
+        public AudioSource triggerSound;
         
         [Header("UI")]
         public AudioSource clickSound;
@@ -56,7 +58,17 @@ public class SoundManager : MonoBehaviour
                 bgSound.volume = 0.02f;
             }
         }
-        
+
+        private void FixedUpdate()
+        {
+            if (sceneCheck == "boss")
+            {
+                bgSound.Stop();
+                bossBattleSound.Play();
+                bossBattleSound.volume = 0.02f;
+            }
+        }
+
         public void PlayMainMusic(MainSoundTypes currentMusic)
         {
             switch (currentMusic)
@@ -67,6 +79,9 @@ public class SoundManager : MonoBehaviour
                     break;
                 case MainSoundTypes.Walking:
                     walkingSound.Play();
+                    break;
+                case MainSoundTypes.Trigger:
+                    triggerSound.Play();
                     break;
             }
         }
