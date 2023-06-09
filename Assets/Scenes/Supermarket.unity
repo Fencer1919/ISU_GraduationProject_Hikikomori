@@ -474,7 +474,7 @@ MonoBehaviour:
   storyText: Have you decided yet? Can you please hurry a bit.
   description: 
   character: {fileID: 1053311842}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f17a006064ff0c048808880e7e77ced6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -503,7 +503,7 @@ MonoBehaviour:
   colliderVar: {fileID: 0}
 --- !u!114 &108642786
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -532,7 +532,7 @@ MonoBehaviour:
   storyText: . . .
   description: 
   character: {fileID: 1053311842}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f17a006064ff0c048808880e7e77ced6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -561,7 +561,7 @@ MonoBehaviour:
     also have strawberry or grape.
   description: 
   character: {fileID: 1053311842}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f17a006064ff0c048808880e7e77ced6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -615,7 +615,7 @@ MonoBehaviour:
   storyText: Of course, which flavor would you like?
   description: 
   character: {fileID: 1053311842}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f17a006064ff0c048808880e7e77ced6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -724,7 +724,7 @@ MonoBehaviour:
   storyText: Is there anything else I can get for you?
   description: 
   character: {fileID: 1053311842}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f17a006064ff0c048808880e7e77ced6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -778,7 +778,7 @@ MonoBehaviour:
   storyText: That'll be 300 yen, please.
   description: 
   character: {fileID: 1053311842}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f17a006064ff0c048808880e7e77ced6, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -817,9 +817,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 66
-    y: 70
-    width: 93
+    x: 73.27273
+    y: 73.63636
+    width: 93.63634
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -856,11 +856,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 333, y: 226}
+  scrollPos: {x: 320.338, y: 130.05751}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.5500003
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -870,7 +870,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 108642800}
   selectedCommands:
-  - {fileID: 108642786}
+  - {fileID: 108642784}
   variables: []
   description: 
   stepPause: 0
@@ -2082,7 +2082,8 @@ MonoBehaviour:
   nameText: Cashier
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: f17a006064ff0c048808880e7e77ced6, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -3801,7 +3802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: BossFight2
-  waitingTime: 10
+  waitingTime: 25
 --- !u!4 &1777761570
 Transform:
   m_ObjectHideFlags: 0

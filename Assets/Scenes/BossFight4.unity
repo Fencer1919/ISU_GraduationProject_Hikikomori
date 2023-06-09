@@ -6080,7 +6080,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossCompletedPanel: {fileID: 950450405}
   timerPanel: {fileID: 590827389}
+  nextSceneName: EndScene
   countdown: {fileID: 783623405}
+  bossSceneCheck: boss
   playerBossMovement: {fileID: 1669339254}
 --- !u!4 &802323193
 Transform:
