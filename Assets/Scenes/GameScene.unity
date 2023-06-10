@@ -17097,7 +17097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7500fa7056fa1cd468b897fd36f45eea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 7
   jumpForce: 3
   sceneBlink: {fileID: 676194204}
   imagePanel: {fileID: 676194200}

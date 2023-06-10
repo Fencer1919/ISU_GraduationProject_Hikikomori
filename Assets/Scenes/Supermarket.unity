@@ -869,8 +869,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 108642800}
-  selectedCommands:
-  - {fileID: 108642784}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -3802,7 +3801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: BossFight2
-  waitingTime: 25
+  waitingTime: 15
 --- !u!4 &1777761570
 Transform:
   m_ObjectHideFlags: 0
@@ -4375,10 +4374,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.008
-  m_Height: 0.03
+  m_Radius: 0.024287792
+  m_Height: 0.048575595
   m_Direction: 1
-  m_Center: {x: -0.00070084195, y: 0.015, z: 0.00065308873}
+  m_Center: {x: 0.002094357, y: 0.015, z: 0.0006530881}
 --- !u!114 &1904338456
 MonoBehaviour:
   m_ObjectHideFlags: 0

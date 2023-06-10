@@ -1089,9 +1089,67 @@ Transform:
   - {fileID: 1761621945}
   - {fileID: 523208696}
   - {fileID: 348932143}
+  - {fileID: 340358828}
+  - {fileID: 1826030580}
+  - {fileID: 1352585817}
+  - {fileID: 475290472}
+  - {fileID: 235470054}
+  - {fileID: 2057043382}
+  - {fileID: 709242112}
+  - {fileID: 636517406}
+  - {fileID: 310722698}
+  - {fileID: 1634555840}
+  - {fileID: 1015082932}
+  - {fileID: 450363886}
+  - {fileID: 1109659279}
+  - {fileID: 168404923}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!1 &168404922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 168404923}
+  - component: {fileID: 168404924}
+  m_Layer: 0
+  m_Name: RoadCollider2 (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &168404923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168404922}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 306.9, y: -18.49, z: -7.3}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 79
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &168404924
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168404922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.069742545, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.66250265, y: -4.8938475, z: 0.34500977}
 --- !u!1 &202551394
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,6 +1439,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5cb8b131818cb7c4a9e461d26344002d, type: 3}
   m_PrefabInstance: {fileID: 227793367}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &235470053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 235470054}
+  - component: {fileID: 235470055}
+  m_Layer: 0
+  m_Name: RoadCollider2 (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &235470054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235470053}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 227.7, y: -18.6, z: 6.7}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 70
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &235470055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235470053}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23936886, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.62955636, y: -4.8938465, z: 0.34500977}
 --- !u!1001 &236744917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1721,6 +1823,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0732d89794685de45b6dceb13766a8ce, type: 3}
   m_PrefabInstance: {fileID: 305764789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &310722697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 310722698}
+  - component: {fileID: 310722699}
+  m_Layer: 0
+  m_Name: RoadCollider2 (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &310722698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310722697}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 87.9, y: -18.6, z: -7.2}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 74
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &310722699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310722697}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18750225, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.60362256, y: -4.893846, z: 0.34500977}
 --- !u!1 &316687702 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5323162407277330719, guid: e1ec7ad54751cb44ab1b00f8eeffd7b1, type: 3}
@@ -1769,6 +1915,50 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &340358827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 340358828}
+  - component: {fileID: 340358829}
+  m_Layer: 0
+  m_Name: RoadCollider2 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &340358828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340358827}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 51.5, y: -18.6, z: 6.7}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 66
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &340358829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340358827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16996518, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.6123911, y: -4.893846, z: 0.34500977}
 --- !u!1001 &348932142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2244,6 +2434,50 @@ Transform:
   m_Father: {fileID: 167793945}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 143.264, y: -108.86301, z: -105.131}
+--- !u!1 &450363885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 450363886}
+  - component: {fileID: 450363887}
+  m_Layer: 0
+  m_Name: RoadCollider2 (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &450363886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450363885}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 227.7, y: -18.6, z: -7.2}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 77
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &450363887
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450363885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23936886, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.62955636, y: -4.8938465, z: 0.34500977}
 --- !u!1 &450471971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,6 +2982,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2024d850ea7d97e49a69b605f94c20ed, type: 3}
   m_PrefabInstance: {fileID: 471612586}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &475290471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475290472}
+  - component: {fileID: 475290473}
+  m_Layer: 0
+  m_Name: RoadCollider2 (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &475290472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475290471}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 179.5, y: -18.6, z: 6.7}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 69
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &475290473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475290471}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19053493, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.6134409, y: -4.893846, z: 0.34500977}
 --- !u!1001 &475450771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3955,6 +4233,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5cb8b131818cb7c4a9e461d26344002d, type: 3}
   m_PrefabInstance: {fileID: 598595878}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &636517405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 636517406}
+  - component: {fileID: 636517407}
+  m_Layer: 0
+  m_Name: RoadCollider2 (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &636517406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636517405}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 51.5, y: -18.6, z: -7.2}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 73
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &636517407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636517405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16996518, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.6123911, y: -4.893846, z: 0.34500977}
 --- !u!1001 &642890467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9341,6 +9663,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &709242111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 709242112}
+  - component: {fileID: 709242113}
+  m_Layer: 0
+  m_Name: RoadCollider2 (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &709242112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709242111}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 306.9, y: -18.49, z: 6.6}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 72
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &709242113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709242111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.069742545, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.66250265, y: -4.8938475, z: 0.34500977}
 --- !u!4 &715089469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5755993343550976878, guid: d222ab52e74259e4e9787fc25ba0c578, type: 3}
@@ -11831,6 +12197,50 @@ Transform:
   m_Father: {fileID: 167793945}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1015082931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015082932}
+  - component: {fileID: 1015082933}
+  m_Layer: 0
+  m_Name: RoadCollider2 (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1015082932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015082931}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 179.5, y: -18.6, z: -7.2}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 76
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &1015082933
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015082931}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19053493, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.6134409, y: -4.893846, z: 0.34500977}
 --- !u!1 &1108462293
 GameObject:
   m_ObjectHideFlags: 0
@@ -11871,6 +12281,50 @@ Transform:
   m_Father: {fileID: 167793945}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: -47.1, z: 0}
+--- !u!1 &1109659278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1109659279}
+  - component: {fileID: 1109659280}
+  m_Layer: 0
+  m_Name: RoadCollider2 (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1109659279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109659278}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 267.1, y: -18.49, z: -7.3}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 78
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &1109659280
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109659278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18730591, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.6037208, y: -4.893846, z: 0.34500977}
 --- !u!1 &1112739066
 GameObject:
   m_ObjectHideFlags: 0
@@ -13380,6 +13834,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b2131ea4775cec84d8e25a9ffcf7fb79, type: 3}
   m_PrefabInstance: {fileID: 1348085674}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1352585816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1352585817}
+  - component: {fileID: 1352585818}
+  m_Layer: 0
+  m_Name: RoadCollider2 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1352585817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352585816}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 127.9, y: -18.49, z: 6.61}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 68
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &1352585818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352585816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23652832, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.57910955, y: -4.8938456, z: 0.34500977}
 --- !u!1001 &1400617307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15164,6 +15662,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f5620e1ed560d064aa1cf9f5909cc388, type: 3}
   m_PrefabInstance: {fileID: 1623126807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1634555839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1634555840}
+  - component: {fileID: 1634555841}
+  m_Layer: 0
+  m_Name: RoadCollider2 (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1634555840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634555839}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 127.9, y: -18.49, z: -7.3}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 75
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &1634555841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634555839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23652832, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.57910955, y: -4.8938456, z: 0.34500977}
 --- !u!1001 &1634567435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16006,6 +16548,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5cb8b131818cb7c4a9e461d26344002d, type: 3}
   m_PrefabInstance: {fileID: 1815793569}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1826030579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1826030580}
+  - component: {fileID: 1826030581}
+  m_Layer: 0
+  m_Name: RoadCollider2 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1826030580
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826030579}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 87.9, y: -18.6, z: 6.7}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 67
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &1826030581
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826030579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18750225, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.60362256, y: -4.893846, z: 0.34500977}
 --- !u!1 &1857399587
 GameObject:
   m_ObjectHideFlags: 1
@@ -17135,6 +17721,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b13e7bda2cc151249b7c9183cc22e5d2, type: 3}
   m_PrefabInstance: {fileID: 2038962617}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2057043381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2057043382}
+  - component: {fileID: 2057043383}
+  m_Layer: 0
+  m_Name: RoadCollider2 (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2057043382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057043381}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 267.1, y: -18.49, z: 6.6}
+  m_LocalScale: {x: 197.29024, y: 1, z: 35.37862}
+  m_Children: []
+  m_Father: {fileID: 167793945}
+  m_RootOrder: 71
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &2057043383
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057043381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18730591, y: 1.2018255, z: 0.049904164}
+  m_Center: {x: -0.6037208, y: -4.893846, z: 0.34500977}
 --- !u!1001 &2058318303
 PrefabInstance:
   m_ObjectHideFlags: 0
